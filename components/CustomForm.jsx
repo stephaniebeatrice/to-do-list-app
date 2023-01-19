@@ -9,7 +9,7 @@ const handleFormSubmit = (e) => {
 const CustomForm = ({addTask}) => {
   const [task, setTask] = useState("");
 
-  const handleSubmitForm = (e) => {
+  const handleFormSubmit = (e) => {
     e.preventDefault();
     addTask({
       name:task,
@@ -22,7 +22,7 @@ const CustomForm = ({addTask}) => {
     <form 
     className = "todo"
     onSubmit={handleFormSubmit}>
-      <p>{task}</p>
+      
         <div className = "wrapper">
             <input type ="text" 
               id ="task" 
